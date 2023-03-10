@@ -7,7 +7,6 @@ import Modal from './parts/Modal';
 const ImageFinder = () => {
   const [name, setName] = useState('');
   const [page, setPage] = useState(12);
-  const [arrayImage, setArrayImage] = useState(null);
   const [img, setImg] = useState(null);
   const [modal, setModal] = useState(false);
 
@@ -36,7 +35,6 @@ const ImageFinder = () => {
       <ImageGalery
         name={name}
         page={page}
-        arrayImage={arrayImage}
         buttonMore={buttonMore}
         onModal={openModal}
       />

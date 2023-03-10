@@ -9,14 +9,22 @@
    align-items: center;
    background-color: rgba(0, 0, 0, 0.6);
    z-index: 1000;
-   }
-   
-   .Modal {
+   transition: opacity 0.3s ease-in-out; /* добавляем анимацию */
+ }
+ 
+ 
+ 
+ .Modal {
    max-width: 800px;
    max-height: calc(100vh - 48px);
    overflow: auto;
-   background-color: #fff;
-   border-radius: 4px;
-   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
    padding: 24px;
-   }
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   transition: opacity 0.3s ease-in-out; /* добавляем анимацию */
+ }
+ 
+ 
